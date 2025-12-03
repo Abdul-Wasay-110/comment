@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+        var inp1=parseInt(document.getElementById("num1").value);
+        var inp2=parseInt(document.getElementById("num2").value);
+        var output= inp1 + inp2;
+        document.getElementById('result').value=output; }
+
+
+        function sub(){
+            var inp1=parseInt(document.getElementById("num1").value);
+            var inp2=parseInt(document.getElementById("num2").value);
+            var output= inp1 - inp2;
+            document.getElementById('result').value=output;}
+
+             function multiply(){
+            var inp1=parseInt(document.getElementById("num1").value);
+            var inp2=parseInt(document.getElementById("num2").value);
+            var output= inp1 * inp2;
+            document.getElementById('result').value=output;}
+
+
+
+          
+            function division(){
+        var inp1=parseInt(document.getElementById("num1").value);
+        var inp2=parseInt(document.getElementById("num2").value);
+        var output= inp1 / inp2;
+        document.getElementById('result').value=output; }
+
+            
+
+    </script>
+</head>
+<style>
+*{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+</style>
+<body>
+    <h1>Danger Calculator</h1>
+
+
+    <label for="">First Number</label> <br>
+    <input type="text" id="num1" placeholder="First number">
+    <br><br>
+    <label for="">Second numnber</label> <br>
+    <input type="text" id="num2" placeholder="Second number">
+    <br><br>
+    <input type="text" placeholder="Result" readonly id="result"> <br> <br>
+    <button onclick="sum()">Add</button>
+    <button onclick="sub()">SUb</button>
+    <button onclick="multiply()">Mul</button>
+    <button onclick="division()">Div</button>
+
+     
+
+
+
+</body>
+</html>

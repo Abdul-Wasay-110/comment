@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+}
+
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.visitor-count {
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+nav li a:hover,
+nav li a:active {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+main {
+  padding: 1rem;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+}
+</style>
+
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gift Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <span class="visitor-count">Visitors: <span id="visitor-count">0</span></span>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#birthday">Birthday</a></li>
+        <li><a href="#anniversary">Anniversary</a></li>
+        <li><a href="#friendship">Friendship</a></li>
+        <li><a href="#newyear">New Year</a></li>
+        <li><a href="#mothersday">Mother's Day</a></li>
+        <li><a href="#topselling">Top Selling</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-section">
+      <h2>Filter Products</h2>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="birthday">Birthday</option>
+        <option value="anniversary">Anniversary</option>
+        <option value="friendship">Friendship</option>
+      </select>
+    </section>
+
+    <section id="products" class="product-grid">
+      <!-- Cards dynamically inserted here -->
+    </section>
+
+    <section id="topselling">
+      <h2>Top Selling Items</h2>
+      <div class="top-items">
+        <!-- Top selling items here -->
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Image gallery goes here.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Email: info@giftportal.com<br/>Address: 123 Gift Street<br/>Phone: +1234567890</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: support@giftportal.com<br/>Phone: +0987654321</p>
+    </section>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h3 id="popup-title"></h3>
+      <p id="popup-desc"></p>
+      <p id="popup-price"></p>
+      <label>Rate this Product: 
+        <select id="rating">
+          <option>★</option>
+          <option>★★</option>
+          <option>★★★</option>
+          <option>★★★★</option>
+          <option>★★★★★</option>
+        </select>
+      </label>
+      <textarea placeholder="Your feedback..."></textarea>
+      <button onclick="submitFeedback()">Submit</button>
+    </div>
+  </div>
+
+  <footer>
+    <marquee behavior="scroll" direction="left" id="ticker"></marquee>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</html>

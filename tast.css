@@ -1,0 +1,74 @@
+
+
+    body{
+        margin:40px;
+        background-color:rgb(193, 147, 208);
+        height:auto;
+
+    }
+    #main{
+        background-color: chocolate;
+        height: 500px;
+    }
+
+
+    
+    
+    
+#nav a{
+    left: 800px;
+    position: relative;
+    top: -40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: black;
+    
+}
+#nav h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 20px;
+    left: 20px;
+position: relative;}
+
+img{position: relative;
+    left: 800px;
+    bottom: 250px;
+    
+}
+#text{
+    position: relative;
+    left: 20px;
+}
+#text h2{
+font-style: italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#text h2 {
+    color: rgb(255, 233, 204);
+}
+button{
+    color: rgb(10, 10, 24);
+    
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    left: 20px;
+
+
+}
+#order{
+    background-color: rgb(205, 106, 35);
+}
+  #contact{
+    background-color: rgb(178, 165, 149);
+  }
+
+ #order{
+    position: relative;
+    top: -250px;
+ }
+#contact{position: relative;
+    top: -250px;}
+

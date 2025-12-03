@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+body{
+    padding: 0%;
+    margin: 1%;
+    background-color: rgb(245, 245, 245);
+   
+}
+#main-div{
+    height: 100px;
+    width: 400px;
+    background-color: rgb(198, 174, 221);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 37%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30PX;}
+
+#main-button{
+    margin: 40px ;
+    text-align: center;
+}
+    #hide-btn{background-color: rgb(223, 174, 114);  }
+#show-btn{
+    background-color: aqua;}
+
+#toogle-btn{
+background-color: rgb(219, 176, 176);
+}
+#fadein-btn{background-color: rgb(220, 177, 125);}
+
+#fadeout-btn{
+    background-color: rgb(193, 208, 178);}
+
+#fade-toogle{ background-color: rgb(157, 109, 119);}
+
+
+#slideup-btn{background-color: rgb(165, 129, 85);}
+
+#slidedown-btn{
+    background-color: cadetblue;}
+
+#slidetoogle-btn{ background-color: rgb(115, 129, 115);}
+
+#text-btn{
+    background-color: rgb(160, 131, 186);
+}
+#html-btn{
+     background-color: rgb(160, 131, 186);
+
+}
+#ooo{  background-color: rgb(160, 131, 186);
+
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+
+}
+.green{
+    color: darkgoldenrod;
+}
+
+
+</style>
+
+<body>
+    <div id="main-div"><h1>Mustafa</h1></div>
+
+    <div id="main-button">
+
+    <button id="hide-btn">hide</button>
+    <button id="show-btn">show</button>
+    <button id="toogle-btn">toogle</button>
+
+    <button id="fadein-btn">Fade in</button>
+    <button id="fadeout-btn">Fade out</button>
+    <button id="fadetoogle-btn">Fade toogle</button>
+
+    <button id="slideup-btn">Slide Up</button>
+    <button id="slidedown-btn">Slide Down</button>
+    <button id="slidetoogle-btn">Slide Toogle</button></div>
+     </div>
+
+
+     
+    <div class="hhh">
+    <p id="m-para">Hello Mustafa</p>
+   <button id="text-btn">Change text</button></div>
+
+
+<div class="hhh">
+   <p id="html-para"><b>Mustafa</b></p>
+   <button id="html-btn">Change Html</button>
+   </div>
+   <br>
+
+   <div>
+<input id="name" type="text" placeholder="Enter Your Name">
+<button id="ooo">Get Value</button>
+</div>
+<br>
+<div class="kkkkk">
+    <img id="cofeeimg" src="../Cofee-fragrance.jpg" height="100px" width="100px" alt="">
+<button id="imgbtn" >Change img</button>
+</div>
+<div class="kkkkk">
+<p id="demo"> Hello</p>
+<button id="hellobtn"> Add class</button>
+</div>
+
+<div class="kkkkk">
+<ul id="list"></ul>
+<button id="listbtn"> Add Item</button>
+</div>
+<br>
+<div class="kkkkk">
+    <div id="box"></div>
+
+</div>
+
+
+</body>
+<script>
+ $ (function(){
+    $ ("#hide-btn").click(() => $("#main-div").hide())
+    $ ("#show-btn").click(() => $("#main-div").show())
+    $ ("#toogle-btn").click(() => $("#main-div").toggle())
+
+    $ ("#fadein-btn").click(() => $("#main-div").fadeIn())
+    $ ("#fadeout-btn").click(() => $("#main-div").fadeOut())
+    $ ("#fadetoogle-btn").click(() => $("#main-div").fadeToggle())
+
+    $ ("#slideup-btn").click(() => $("#main-div").slideUp())
+    $ ("#slidedown-btn").click(() => $("#main-div").slideDown())
+    $ ("#slidetoogle-btn").click(() => $("#main-div").slideToggle())
+});
+
+    $("#text-btn").click(function(){
+        $("#m-para").text("Mustafa chingari");
+    });
+
+
+     $("#html-btn").click(function(){
+        $("#html-para").html("<i>Hello World</i>");
+    });
+    $("#ooo").click(function(){
+        alert($("#name").val());
+    });
+    $("#imgbtn").click(function(){
+        $("#cofeeimg").attr("src","Cofee-fragrance.jpg");
+    });
+     $("#hellobtn").click(function(){
+        $("#demo").addClass("green");
+    });
+
+    
+    $(".add-btn").click(function(){
+        $(".list").append("<li>Usman</li>");
+    });
+    $(".box").hover(
+        function(){ $(this).css("background","green"); },
+        function(){ $(this).css("background","lightblue");}
+);
+
+
+</script>
+</html>

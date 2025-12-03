@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #aaa{
+        height: 150px;
+        width: 150px;
+        animation-name: sss;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        background-color: aqua;
+        position: relative;
+        border: 10px;
+        border-style: double;
+        border-radius: 10%;}
+        #rrr{
+            text-align: center;
+            animation-name: hhh;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            top: 200px;
+        
+        }
+
+            @keyframes hhh{
+                0%{color: blueviolet;}
+                25%{color: blue;}
+                50%{color: cadetblue;}
+                75%{color: black;}
+                100%{color: rgb(211, 125, 12);}
+            }
+        
+        @keyframes sss{
+0%{background-color: bisque; left: 0px; top: 0px; }
+25%{background-color: blueviolet; left: 200px; top: 0px;}
+50%{background-color: brown; left: 200px; top: 200px}
+75%{background-color: cadetblue; left: 0px; top: 200px;}
+100%{background-color: chartreuse; left: 1px; top: 0px}
+
+        }
+</style>
+
+<body>
+    <div id="aaa"> <h1 id="rrr">Animation</h1></div>
+</body>
+</html>
